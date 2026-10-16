@@ -15,9 +15,12 @@ I sourced my hardware from a Lithuanian private seller on [Vinted](https://www.v
 
 ## Inspecting and testing the hardware
 
-The first time I started the phone aquired it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.
+The first time I started the phone aquired it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
 
-- Checking the installed Android version.
+### Checking the installed Android version.   
+<img src="images/android_version.png" alt="Android version" style="width: 20rem;">
+
+
 
 
 - Testing the hardware using manufacturer's own hardware test.
