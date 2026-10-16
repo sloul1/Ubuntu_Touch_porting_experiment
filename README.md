@@ -62,4 +62,4 @@ Percentage for battery status can be calculated by dividing `charge_full` by `ch
 
 If the phone hasn't been used in a while the full battery charge capacity can grow a bit when draining battery empty and charging it back to 100% few times. This is called battery refreshing.
 
-om
+The battery full charge capacity has fluctuated a bit between charges. I've recorded differing results (3694 mAh ~ 91,9% -> 3514 mAh ~ 87,4%). We'll see if this settles after adter some more cycles.
