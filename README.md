@@ -28,6 +28,8 @@ After paying the product (90€ + the platform service fee 5,20€) it took 7 da
 
 ## Inspecting and testing the hardware
 
+Externally the phone matched the description of selling ad. First there was a problem with usb-c cable not attaching firmly enough to the phone for charging. This was resolved scraping lint and other dirt from the charging port with self made non-conductive plastic tool. Be careful not to bend the usb-c port when cleaning it. Use tool flexible enough.
+
 The first time I started the aquired phone it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
 
 ### Checking the installed Android version   
