@@ -10,7 +10,7 @@ At the start of this [Ubuntu Touch](https://www.ubuntu-touch.io/) porting projec
 
 ## Hardware  
 
-[Motorola Edge 30 Neo](https://www.gsmarena.com/motorola_edge_30_neo-11635.php) was chosen as I have interest also for developing [Sailfish OS](https://forum.sailfishos.org/t/motorola-edge-30-neo-port-from-verdanditeam/29547). At the moment writing this there is an active development for it by [VerdandiTeam](https://verdanditeam.com/device/miami).
+[Motorola Edge 30 Neo (miami)](https://www.gsmarena.com/motorola_edge_30_neo-11635.php) was chosen as I have interest also for developing [Sailfish OS](https://forum.sailfishos.org/t/motorola-edge-30-neo-port-from-verdanditeam/29547). At the moment writing this there is an active development for it by [VerdandiTeam](https://verdanditeam.com/device/miami).
 
 I sourced my hardware from a Lithuanian private seller on [Vinted](https://www.vinted.com/). When asked the seller kindly provided me a screenshot of the battery tab of DevCheck app to determine the battery wear. After paying the product (90€ + the platform service fee 5,20€) it took 7 days to get the phone on my hands in Finland. 
 
