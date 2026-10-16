@@ -45,7 +45,9 @@ It took few minutes to go through the `Full test`
 The test results
 
 
-### Checking the condition of the battery using adb
+### Checking the battery condition using adb
+
+The battery status percentage can be calculated by dividing `charge_full` by `charge_full_design` * 10.  
 
 ```bash
 adb shell cat /sys/class/power_supply/battery/charge_full
@@ -59,9 +61,9 @@ adb shell cat /sys/class/power_supply/battery/charge_full_design
 ```bash
 4020000
 ```
-Percentage for battery status can be calculated by dividing `charge_full` by `charge_full_design`.  
-`(3694000 / 4020000) * = 91,89` which is approximately `92 %`.  
+
+`(3694000 / 4020000) * 10 = 91,89` is approximately `92 %` of the original capacity of this battery.  
 
 If the phone hasn't been used in a while the full battery charge capacity can grow a bit when draining battery empty and charging it back to 100% few times. This is called battery refreshing.
 
-The battery full charge capacity has fluctuated a bit between charges. I've recorded differing results (3694 mAh ~ 91,9% -> 3514 mAh ~ 87,4%). We'll see if this settles after adter some more cycles.
+The battery full charge capacity has fluctuated a bit between charges. I've recorded differing results (3694 mAh ~ 91,9% -> 3514 mAh ~ 87,4%). We'll see if this settles after after some more cycles.
