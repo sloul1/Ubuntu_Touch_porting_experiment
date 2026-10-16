@@ -1,4 +1,4 @@
-# ubuntu_touch_porting_experiment
+# Ubuntu Touch porting experiment
 An experiment to port Ubuntu Touch operating system for Motorola Edge 30 Neo.  
 
 
@@ -17,12 +17,18 @@ Motorola Edge 30 Neo image from:
 
 [LineageOS Wiki](https://wiki.lineageos.org/devices/miami/)  
   
-I sourced my hardware from a Lithuanian private seller on [Vinted](https://www.vinted.com/). When asked the seller kindly provided me a screenshot of the battery tab of DevCheck app to determine the battery wear. After paying the product (90€ + the platform service fee 5,20€) it took 7 days to get the phone on my hands in Finland. 
+I sourced my hardware from a Lithuanian private seller on [Vinted](https://www.vinted.com/). When asked the seller kindly provided me a screenshot of the battery tab of DevCheck app to determine the battery wear.  
+
+<img src="images/battery_status_seller.jpg" alt="Battery status from seller" style="width: 20rem;">  
+
+The picture suggests battery designed capacity is around 87% from original design capacity 4020 mAh. At the moment I haven't figured out if it is possible to extract battery charge cycles from this phone model.
+
+After paying the product (90€ + the platform service fee 5,20€) it took 7 days to get the phone on my hands in Finland. 
 
 
 ## Inspecting and testing the hardware
 
-The first time I started the phone aquired it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
+The first time I started the aquired phone it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
 
 ### Checking the installed Android version   
 <img src="images/android_version.png" alt="Android version" style="width: 20rem;">
@@ -52,4 +58,8 @@ adb shell cat /sys/class/power_supply/battery/charge_full_design
 4020000
 ```
 Percentage for battery status can be calculated by dividing `charge_full` by `charge_full_design`.  
-`(3694000 / 4020000) * = 91,89` which is approximately `92 %`.
+`(3694000 / 4020000) * = 91,89` which is approximately `92 %`.  
+
+If the phone hasn't been used in a while the full battery charge capacity can grow a bit when draining battery empty and charging it back to 100% few times. This is called battery refreshing.
+
+om
