@@ -10,9 +10,17 @@ At the start of this [Ubuntu Touch](https://www.ubuntu-touch.io/) porting projec
 
 [Motorola Edge 30 Neo](https://www.gsmarena.com/motorola_edge_30_neo-11635.php) was chosen as I have interest also for developing [Sailfish OS](https://forum.sailfishos.org/t/motorola-edge-30-neo-port-from-verdanditeam/29547). At the moment writing this there is an active development for it by [VerdandiTeam](https://verdanditeam.com/device/miami). I sourced my hardware from a private seller on [Vinted](https://www.vinted.com/) little bit under 100€.  
 
-## Testing hardware
 
-I tested hardware using Motorola's own full hardware test.
+## Inspecting and testing the hardware
+
+The first time I started the phone aquired it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.
+
+- Checking the installed Android version.
+
+
+- Testing the hardware using manufacturer's own hardware test.
+
+
 I also checked the condition of the battery using adb.
 
 ```bash
