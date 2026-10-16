@@ -17,16 +17,20 @@ I sourced my hardware from a Lithuanian private seller on [Vinted](https://www.v
 
 The first time I started the phone aquired it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
 
-### Checking the installed Android version.   
+### Checking the installed Android version   
 <img src="images/android_version.png" alt="Android version" style="width: 20rem;">
 
 
+### Testing the hardware using manufacturer's own hardware test  
+<img src="images/hardware_test_full.png" alt="Hardware test full" style="width: 20rem;">  
+
+It took few minutes to go through the `Full test`  
+  
+<img src="images/hardware_test_full_test_results.png" alt="Hardware test full" style="width: 20rem;">    
+The test results
 
 
-- Testing the hardware using manufacturer's own hardware test.
-
-
-I also checked the condition of the battery using adb.
+### Checking the condition of the battery using adb
 
 ```bash
 adb shell cat /sys/class/power_supply/battery/charge_full
