@@ -6,6 +6,8 @@ An experiment to port Ubuntu Touch operating system for Motorola Edge 30 Neo.
 
 <img src="images/ubuntu_touch_logo_dark.png" alt="Ubuntu touch logo dark" style="width: 20rem;">  
 
+Purpose of this experiment is to have one more device for minimizing data collection by tech giants, preventing surveillance and tracking, and enhancing security against cyber threats. [https://keepandroidopen.org/](https://keepandroidopen.org/) 
+
 At the start of this [Ubuntu Touch](https://www.ubuntu-touch.io/) porting project I have no earlier experience of developing operating systems for mobile phones. My earlier experience is purely flashing different operating systems including [crDroid](https://crdroid.net/), [LineageOS](https://lineageos.org/) (and CyanogenMod as it was named earlier), [Sailfish OS](https://sailfishos.org/) and of course [AOSP based operating systems (read Android)](https://source.android.com/docs/setup) on Android phones back and forth with some little tweaking of those. I'm not sure if getting SSH up and running and getting Mullvad VPN working on a Sailfish OS should be considered as real development.  
 
 ## Hardware  
