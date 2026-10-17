@@ -34,9 +34,6 @@ Externally the phone matched the description of selling ad. First there was a pr
 
 The first time I started the aquired phone it booted straight in to Android. No additional installation was necessary for this. There wasn't any user accounts and no password defined.  
 
-### Checking the installed Android version   
-<img src="images/android_version.png" alt="Android version" style="width: 20rem;">
-
 
 ### Testing the hardware using manufacturer's own hardware test  
 <img src="images/hardware_test_full.png" alt="Hardware test full" style="width: 20rem;">  
@@ -46,6 +43,12 @@ It took few minutes to go through the `Full test`
 <img src="images/hardware_test_full_test_results.png" alt="Hardware test full" style="width: 20rem;">    
 The test results
 
+### Checking the installed Android version   
+<img src="images/android_version.png" alt="Android version" style="width: 20rem;">
+
+### Enabling the Developer options menu and switching on USB debugging and OEM unlocking
+
+Enable USB debugging tapping about 7 times the `Build number` in `Android version` screen. This results notification "You're now a developer" or something similar. After this search developer options menu from the phone setting. In this menu enable `USB debugging` and `OEM unlocking` options. The latter is needed for flashing a ROM to the device.  
 
 ### Checking the battery condition using adb
 
