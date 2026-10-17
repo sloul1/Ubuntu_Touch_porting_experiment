@@ -62,7 +62,7 @@ The test results
 ### Checking the installed Android version   
 <img src="images/android_version.png" alt="Android version" style="width: 20rem;">
 
-### Enabling the Developer options menu and switching on USB debugging and OEM unlocking
+## Enabling the Developer options menu and switching on USB debugging and OEM unlocking
 
 Enable USB debugging tapping about 7 times the `Build number` in `Android version` screen. This results notification "You're now a developer" or something similar. After this search developer options menu from the phone setting. In this menu enable `USB debugging` and `OEM unlocking` options. The latter is needed for flashing a ROM to the device.  
 
