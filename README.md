@@ -88,3 +88,34 @@ adb shell cat /sys/class/power_supply/battery/charge_full_design
 If the phone hasn't been used in a while the full battery charge capacity can grow a bit when draining battery empty and charging it back to 100% few times. This is called battery refreshing.
 
 The battery full charge capacity has fluctuated a bit between charges. I've recorded differing results (3694 mAh ~ 91,9% -> 3514 mAh ~ 87,4%). We'll see if this settles after after some more cycles.
+
+### Reboot into Bootloader menu
+
+The following command should take you to Bootloader menu by rebooting.   
+```bash
+adb reboot bootloader
+```  
+There is usually also a key press combination that takes you to the same menu.  
+
+This menu can be used for OEM unlocking.  
+
+### Checking that the Fastboot mode works  
+```bash
+fastboot devices
+```
+The print out is similar using the `adb` command earlier.  
+```bash
+ZY22H23Q6X	 fastboot
+```
+Rebooting to back to installed operating system can be done using:
+```bash
+fastboot reboot
+```
+
+```bash
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.151s
+```
+
+
+
