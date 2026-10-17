@@ -50,6 +50,20 @@ The test results
 
 Enable USB debugging tapping about 7 times the `Build number` in `Android version` screen. This results notification "You're now a developer" or something similar. After this search developer options menu from the phone setting. In this menu enable `USB debugging` and `OEM unlocking` options. The latter is needed for flashing a ROM to the device.  
 
+### Using ADB (Android Debug Bridge)
+
+Check that the phone is connected by running:  
+```bash
+adb devices
+```
+This should print the ID of the attached device:  
+
+```bash
+List of devices attached
+ZY22H23Q6X	device
+```
+
+
 ### Checking the battery condition using adb
 
 The battery status percentage can be calculated by dividing `charge_full` by `charge_full_design` * 10.  
