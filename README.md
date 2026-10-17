@@ -1,6 +1,8 @@
 # Ubuntu Touch porting experiment
 An experiment to port Ubuntu Touch operating system for Motorola Edge 30 Neo.  
 
+> [!CAUTION]
+> Installing or developing custom ROMs carries significant risks, including permanent device damage, security vulnerabilities, and warranty voidance. Unlocking the bootloader typically voids the manufacturer’s warranty. Proceed at your own risk! 
 
 ## Preface  
 
