@@ -13,7 +13,12 @@ Purpose of this experiment is to have one more device for minimizing data collec
 At the start of this [Ubuntu Touch](https://www.ubuntu-touch.io/) porting project I have no earlier experience of developing operating systems for mobile phones. My earlier experience is purely flashing different operating systems including [crDroid](https://crdroid.net/), [LineageOS](https://lineageos.org/) (and CyanogenMod as it was named earlier), [Sailfish OS](https://sailfishos.org/) and of course [AOSP based operating systems (read Android)](https://source.android.com/docs/setup) on Android phones back and forth with some little tweaking of those. I think that getting SSH up and running and getting one Mullvad VPN profile working on a Sailfish OS doesn't count as so real OS development.  
 
 ## Software tools
-This documentation has been started using Fedora 44. The development itself might be carried out using Ubuntu as recommended. Here are the commands to install ADB (Andoid Debug Bridge) on RHEL- (Fedora) and Debian based (Ubuntu) Linux from package manager.  
+This documentation has been started using Fedora 44. The development itself might be carried out using Ubuntu as recommended.  
+> [!NOTE]
+> There might be software installed earlier on my systems that are not mentioned here. I'll try to come up with a full list of used software for the development.
+
+### ADB install
+Install ADB (Andoid Debug Bridge) on RHEL- (Fedora) and Debian based (Ubuntu) Linux from package manager.  
 
 Ubuntu/Debian/Mint:
 ```bash
@@ -23,8 +28,8 @@ Fedora/RHEL/CentOS:
 ```bash
 sudo dnf install android-tools
 ```
-> [!NOTE]
-> There might be software installed earlier on my systems that are not mentioned here. I'll try to come up with a full list of used software for the development.  
+### ADB / fastboot guide on LineageOS Wiki
+[Using ADB fastboot](https://wiki.lineageos.org/adb_fastboot_guide)
 
 ## Hardware  
 
