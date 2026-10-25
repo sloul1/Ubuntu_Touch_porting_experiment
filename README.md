@@ -137,4 +137,44 @@ Finished. Total time: 0.151s
 ```
 
 
+> [!WARNING]
+> THE FOLLOWING IS BEING TESTED AT THE MOMENT!!!
 
+## Setting up the build environment
+
+The following steps for setting up the build environment on Ubuntu 24.04 LTS are adapted from the [UBports documentation](https://docs.ubports.com/en/latest/porting/introduction/Setting_up.html).  
+  
+
+```bash
+python -V
+sudo dpkg --add-architecture i386
+sudo apt update
+```
+The following gives some errors...
+```bash
+sudo apt install git gnupg flex bison gperf build-essential \
+zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
+python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
+repo liblz4-tool bc lzop imagemagick libncurses5 rsync
+```
+  
+```bash
+E: Package 'libgl1-mesa-glx:i386' has no installation candidates
+E: Unable to locate package libncurses5
+E: Package 'python2' has no installation candidates
+```
+  
+suggested fix for this:  
+```bash
+sudo apt install libgl1:i386 libglx-mesa0:i386 libncurses6:i386
+```
+
+Download the repo script and make it bootable:  
+```bash
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+rx ~/bin/repo
+```
+
+  
