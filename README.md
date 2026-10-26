@@ -142,15 +142,18 @@ Finished. Total time: 0.151s
 
 ## Setting up the build environment
 
-The following steps for setting up the build environment on Ubuntu 24.04 LTS are adapted from the [UBports documentation](https://docs.ubports.com/en/latest/porting/introduction/Setting_up.html).  
-  
+Seems that the steps for setting up the build environment on Ubuntu 24.04 LTS using the [UBports documentation](https://docs.ubports.com/en/latest/porting/introduction/Setting_up.html) is bit problematic. Documentation might be bit outdated and / or incomplete. 
 
+[The fix](#fix-setting-up-development-environment) for this is still being tested.  
+
+This doesn't give any output if `python3` is installed:  
+  
 ```bash
 python -V
-sudo dpkg --add-architecture i386
-sudo apt update
 ```
-The following gives some errors...
+
+Also the following gives some errors.
+  
 ```bash
 sudo apt install git gnupg flex bison gperf build-essential \
 zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -159,22 +162,33 @@ libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
 python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
 repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 ```
+### Errors
   
 ```bash
 E: Package 'libgl1-mesa-glx:i386' has no installation candidates
 E: Unable to locate package libncurses5
 E: Package 'python2' has no installation candidates
-```
-  
-suggested fix for this:  
-```bash
-sudo apt install libgl1:i386 libglx-mesa0:i386 libncurses6:i386
-```
+```   
+## Fix setting up development environment
 
-Download the repo script and make it bootable:  
-```bash
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+rx ~/bin/repo
-```
+| Removed / Changed | Replacement | Why |
+|---|---|---|
+| `libgl1-mesa-glx:i386` | `libgl1:i386`, `libglx-mesa0:i386` | Obsolete since 23.10; split into these two |
+| `libncurses5-dev:i386` | `libncurses-dev:i386` | Avoids the "Note" (same package, cleaner) |
+| `libreadline6-dev:i386` | `libreadline-dev:i386` | Avoids the "Note" (same package, cleaner) |
+| `libncurses5` | `libncurses6` | Runtime lib 5 was removed from 24.04 repos |
+| `x11proto-core-dev` | *(removed)* | No longer exists in 22.04+ |
+| `python2` | *(removed)* | Not in 22.04+ repos; `python-is-python3` handles the python symlink |
+| `mingw-w64-i686-dev` | *(kept)* | Still valid on 24.04 |  
+
+> [!NOTE]
+> Brave search AI: "If a specific Halium build script hard-requires python2 (unlikely with current Halium 9/10), you'd need to grab the .deb from the focal archive, but you should hit that problem (if at all) only during the build, not during setup."
+
+All of the fixes above regearding to the setting up development environment and the rest of the steps in docs are included in the script `setup_dev_env_ubuntu_2204.sh`.
+
+
+
+
+ 
 
   
