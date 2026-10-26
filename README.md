@@ -184,7 +184,7 @@ E: Package 'python2' has no installation candidates
 > [!NOTE]
 > Brave search AI: "If a specific Halium build script hard-requires python2 (unlikely with current Halium 9/10), you'd need to grab the .deb from the focal archive, but you should hit that problem (if at all) only during the build, not during setup."
 
-All of the fixes above regearding to the setting up development environment and the rest of the steps in docs are included in the script [setup_dev_env_ubuntu_2204.sh](setup_dev_env_ubuntu_2204.sh).
+All of the fixes above regarding to the setting up development environment and the rest of the steps in docs are included in the script [setup_dev_env_ubuntu_2204.sh](setup_dev_env_ubuntu_2204.sh).
 
 
 
